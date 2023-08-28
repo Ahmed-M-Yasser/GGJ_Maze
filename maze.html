@@ -11,6 +11,7 @@
             <h3 style="position: relative; bottom: -424px; right: -270px;">End</h3>
         </div>
         <button id="stopBtn" onclick="stopAnimation()">Stop</button>
+        <button id="" onclick="resetPage()">Reset</button>
         <button id="" onclick="reloadPage()">Reload</button>
 
         <script>
@@ -379,6 +380,9 @@
             }
             function reloadPage(){
                 location.reload();
+            }
+            function resetPage() {
+                reset();
             }
             function animate() {
                 //sets all pixels in the rectangle defined by starting point (x, y) and size (width, height) to transparent black, erasing any previously drawn content
